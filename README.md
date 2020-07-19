@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/SceptreOfficial/Simplex-Mission-Mods/raw/master/assets/smm.png" width="128">
+	<img src="https://raw.githubusercontent.com/SceptreOfficial/Simplex-Mission-Mods/master/smm.png" width="128">
 </p>
 
 <p align="center">
