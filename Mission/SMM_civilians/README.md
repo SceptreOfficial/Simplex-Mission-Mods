@@ -1,6 +1,7 @@
 Simplex Civilians
 
 Requirements: CBA, ZEN, SMM_common
+
 Optional: ACE (for self interaction to tell civs to go away)
 
 - Adds dynamic civilian spawn system
