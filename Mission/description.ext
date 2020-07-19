@@ -1,43 +1,19 @@
-// Mission setup
-
-author = "Sceptre";
-onLoadName = "TITLE";
-onLoadMission = "DESC";
-loadScreen = "";
-class Header {
-	gameType = Coop;
-};
-respawn = "BASE";
-respawnTemplates[] = {"MenuPosition"};
-respawnDialog = 0;
-respawnDelay = 5;
-respawnVehicleDelay = 10;
-disabledAI = 1;
-saving = 0;
-joinUnassigned = 1;
-corpseManagerMode = 3;
-corpseLimit = 15;
-corpseRemovalMinTime = 60;
-corpseRemovalMaxTime = 600;
-wreckManagerMode = 3;
-wreckLimit = 20;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 1800;
-minPlayerDistance = 50;
-
-// Mission-side scripting
-
+// REQUIRED
 #include "SMM_common\CDS\gui.hpp"
 
 class CfgFunctions {
-	#include "SMM_ambience\functions.hpp"
-	#include "SMM_civilians\functions.hpp"
+	// REQUIRED
 	#include "SMM_common\CDS\functions.hpp"
 	#include "SMM_common\functions.hpp"
+
+	// OPTIONALS
+	#include "SMM_ambience\functions.hpp"
+	#include "SMM_civilians\functions.hpp"
 	#include "SMM_zeus\functions.hpp"
 };
 
 class CfgSounds {
 	sounds[] = {};
+	// REQUIRED
 	#include "SMM_common\sounds.hpp"
 };
