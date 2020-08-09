@@ -4,9 +4,9 @@
 	["SLIDER",["Pedestrian spawn radius","Radius of ""spawn sector"" around players to spawn pedestrians"],[[250,1500,0],GVAR(pedSpawnRadius)]],
 	["SLIDER",["Driving vehicle spawn radius","Radius of ""spawn sector"" around players to spawn driving vehicles"],[[250,1500,0],GVAR(driverSpawnRadius)]],
 	["SLIDER",["Parked vehicle spawn radius","Radius of ""spawn sector"" around players to spawn parked vehicles"],[[250,1500,0],GVAR(parkedSpawnRadius)]],
-	["SLIDER",["Pedestrians","Max amount of pedestrians to spawn in every sector"],[[0,30,0],GVAR(pedCount)]],
-	["SLIDER",["Driving vehicles","Max amount of driven/moving vehicles to spawn in every sector"],[[0,20,0],GVAR(driverCount)]],
-	["SLIDER",["Parked vehicles","Max amount of parked/unnoccupied vehicles to spawn in every sector"],[[0,20,0],GVAR(parkedCount)]],
+	["SLIDER",["Pedestrians","Amount of pedestrians to spawn in every ""spawn sector"""],[[0,30,0],GVAR(pedCount)]],
+	["SLIDER",["Driving vehicles","Amount of driven/moving vehicles to spawn in every ""spawn sector"""],[[0,20,0],GVAR(driverCount)]],
+	["SLIDER",["Parked vehicles","Amount of parked/unnoccupied vehicles to spawn in every ""spawn sector"""],[[0,20,0],GVAR(parkedCount)]],
 	["EDITBOX",["Unit classes","Civilian unit classes, leave empty for defaults"],str GVAR(unitClasses)],
 	["EDITBOX",["Vehicle classes","Vehicle classes, leave empty for defaults"],str GVAR(vehClasses)]
 ],{
