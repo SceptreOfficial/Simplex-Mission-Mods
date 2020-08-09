@@ -2,9 +2,7 @@
 
 params [["_aircraftClass","",[""]],["_startPos",[],[[]]],["_endPos",[],[[]]],["_altitude",500,[0]]];
 
-// Set correct position altitudes
 _startPos set [2,_altitude];
-_endPos set [2,_altitude];
 
 // Spawn vehicle
 private _aircraft = createVehicle [_aircraftClass,[0,0,_altitude],[],0,"FLY"];
@@ -19,9 +17,13 @@ private _group = createGroup [civilian,true];
 private _pilot = _group createUnit ["C_man_pilot_F",[0,0,0],[],0,"CAN_COLLIDE"];
 _pilot moveInDriver _aircraft;
 _pilot setBehaviour "CARELESS";
+_pilot setSkill 1;
+_pilot allowFleeing 0;
 
-// Add waypoint
+// Move to the end pos
 private _wp = _group addWaypoint [_endPos,0];
+_wp setWaypointType "MOVE";
+_wp setWaypointCompletionRadius 300;
 _wp setWaypointStatements ["true",QUOTE(
 	private _group = group this;
 	private _vehicle = vehicle this;
@@ -33,5 +35,4 @@ _wp setWaypointStatements ["true",QUOTE(
 	};
 )];
 
-// Fly at correct altitude
 _aircraft flyInHeight _altitude;
