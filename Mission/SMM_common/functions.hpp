@@ -2,6 +2,7 @@ class SMM_common {
 	tag = "SMM_common";
 	class functions {
 		file = "SMM_common\functions";
+		class dialogMarker {};
 		class getNearest {};
 		class iterate {};
 		class postInit {postInit = 1;};
